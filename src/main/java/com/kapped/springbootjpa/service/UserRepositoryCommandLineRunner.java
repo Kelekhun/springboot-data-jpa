@@ -22,8 +22,8 @@ public class UserRepositoryCommandLineRunner implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
-        User user = new User(10002L,"Sony Basnet", "Admin");
+    public void run(String... args){
+        User user = new User(10002L,"Jane Doe", "Admin");
         userRepository.save(user);
         log.info("New User Created through UserRepository: " + user);
 
